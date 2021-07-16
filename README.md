@@ -13,7 +13,9 @@ SQUARE-CARE utilizes a Ruby on Rails backend and a frontend built on JavaScript,
 
 ## USAGE
 
+After opening the browser and running the server, signup or login using the displayed buttons. Fill out the form successfully and be redirected to the user home page. Here, any previously created squares will be shown. One will be prompted to create a new square. 
+
 ## CONTRIBUTING + LICENSING
 MIT License, Copyright (c) 2021 am20dipi
 
-For more information [click here](https://github.com/am20dipi/square-care/blob/master/notes.md) 
+For more information [click here](https://github.com/am20dipi/square-care/blob/master/notes.md). 
