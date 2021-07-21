@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -51,11 +51,51 @@ const Signup = () => {
   )
 }
 
+const link = {
+  width: '100px',
+  padding: '12px',
+  margin: '0 6px 6px',
+  background: 'pink',
+  textDecoration: 'none',
+  color: 'black',
+}
+
+const Navbar = () =>
+  <div>
+    <NavLink
+      to="/"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'red'
+      }}
+    >Home</NavLink>
+    <NavLink
+      to="/login"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+    >Login</NavLink>
+    <NavLink
+      to="/signup"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+    >Signup</NavLink>
+  </div>
+
 ReactDOM.render(
   <Router>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/login" component={Login} />
-    <Route exact path="/signup" component={Signup} />
+    <div>
+      <Navbar/>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/signup" component={Signup} />
+    </div>
   </Router>,
   document.getElementById('root')
 );
