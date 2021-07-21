@@ -1,6 +1,6 @@
 # SQUARE-CARE
 
-SQUARE-CARE is a stimulating application that allows users to create, interact, view and delete SQUARES in a minimalist environment. 
+SQUARE-CARE is an application that allows users to create, interact, view and delete SQUARES in a minimalist environment. 
 
 SQUARE-CARE utilizes a Ruby on Rails backend and a frontend built on JavaScript, React framework and Redux middleware. 
 
