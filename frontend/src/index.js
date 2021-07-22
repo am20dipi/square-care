@@ -75,7 +75,7 @@ const Navbar = () =>
       exact
       style={link}
       activeStyle={{
-        background: 'darkblue'
+        background: 'red'
       }}
     >Login</NavLink>
     <NavLink
@@ -83,7 +83,7 @@ const Navbar = () =>
       exact
       style={link}
       activeStyle={{
-        background: 'darkblue'
+        background: 'red'
       }}
     >Signup</NavLink>
   </div>
