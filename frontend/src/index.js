@@ -3,90 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import Home from './Home'
+import Signup from './Signup'
+import Login from './Login'
+import Navbar from './Navbar'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-}
 
-const Login = () => {
-  return (
-    <div>
-      <h1>Login</h1>
-      <form>
-        <div>
-          <input type="text" name="email" placeholder="Email" />
-        </div>
-        <div>
-          <input type="password" name="password" placeholder="Password" />
-        </div><br></br>
-        <input type="submit" value="Login" />
-      </form>
-    </div>
-  )
-}
 
-const Signup = () => {
-  return (
-    <div>
-      <h1>Signup</h1>
-      <form>
-        <div>
-          <input type="text" name="name" placeholder="Name" />
-        </div>
-        <div>
-          <input type="text" name="email" placeholder="Email" />
-        </div>
-        <div>
-          <input type="password" name="password" placeholder="Password" />
-        </div><br></br>
-        <input type="submit" value="Login" />
-      </form>
-    </div>
-  )
-}
-
-const link = {
-  width: '100px',
-  padding: '12px',
-  margin: '0 6px 6px',
-  background: 'pink',
-  textDecoration: 'none',
-  color: 'black',
-}
-
-const Navbar = () =>
-  <div>
-    <NavLink
-      to="/"
-      exact
-      style={link}
-      activeStyle={{
-        background: 'red'
-      }}
-    >Home</NavLink>
-    <NavLink
-      to="/login"
-      exact
-      style={link}
-      activeStyle={{
-        background: 'red'
-      }}
-    >Login</NavLink>
-    <NavLink
-      to="/signup"
-      exact
-      style={link}
-      activeStyle={{
-        background: 'red'
-      }}
-    >Signup</NavLink>
-  </div>
 
 ReactDOM.render(
   <Router>
