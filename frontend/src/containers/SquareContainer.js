@@ -1,11 +1,11 @@
 import React from 'react'
+import Square from '../Square'
 
-export default function SquareContainer() {
-      
-
+export default function SquareContainer({ squares }) {
     return (
-        <div>
-            
-        </div>
+        squares.map(square => {
+            return <Square key={square} square={square}/>
+        })
+
     )
 }
