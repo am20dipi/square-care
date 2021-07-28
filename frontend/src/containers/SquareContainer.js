@@ -1,11 +1,17 @@
 import React from 'react'
-import Square from '../Square'
+import SquareCard from './SquareCard'
 
-export default function SquareContainer({ squares }) {
-    return (
-        squares.map(square => {
-            return <Square key={square} square={square}/>
-        })
 
-    )
+const SquareContainer = () => {
+        return(
+            <div id="square-collection">
+                
+            </div>
+        )
+
+    
 }
+
+export default SquareContainer
+
+
