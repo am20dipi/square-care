@@ -38,6 +38,14 @@ export default class Navbar extends React.Component {
                 background: 'red'
                 }}
             >Signup</NavLink>
+            <NavLink
+                to="/squares"
+                exact
+                style={link}
+                activeStyle={{
+                background: 'red'
+                }}
+            >Squares</NavLink>
             </div>
         )
         
