@@ -3,9 +3,9 @@ class SquaresController < ApplicationController
 
   # GET /squares
   def index
-    @squares = Square.all
+    squares = Square.all
 
-    render json: @squares
+    render json: squares
   end
 
   # GET /squares/1
