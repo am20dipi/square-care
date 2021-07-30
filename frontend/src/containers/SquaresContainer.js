@@ -8,7 +8,7 @@ class SquaresContainer extends React.Component {
     }
     
     makeCards(){
-        squares.map(square => <SquareCard key={square.id} {...squares}/>)
+        return squares.map(square => <SquareCard key={square.id} {...squares}/>)
     }
 
     componentDidMount(){
