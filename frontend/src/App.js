@@ -4,7 +4,7 @@ import Signup from './Signup'
 import Login from './Login'
 import Navbar from './Navbar'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import SquareContainer from './containers/SquareContainer'
+import SquaresContainer from './containers/SquaresContainer'
 import SquareCard from './containers/SquareCard'
 
 function App() {
@@ -15,12 +15,7 @@ function App() {
         <Navbar/>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-        <SquareContainer />
-        <SquareCard/>
-        
-
-        
+        <Route exact path="/signup" component={Signup} /> 
       </div>
   </Router>
   )

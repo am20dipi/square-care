@@ -1,11 +1,15 @@
-import React from 'react';
+import React from 'react'
+import SquaresContainer from './containers/SquaresContainer'
+import SquareCard from './containers/SquareCard'
 
 export default class Home extends React.Component {
     render() {
         return (
-            <div>
-              <h1>Home!</h1>
-            </div>
+            <>
+                <h1>Home Page</h1>
+                <SquaresContainer />
+                
+            </>
         )
     }
     

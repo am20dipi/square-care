@@ -3,7 +3,7 @@ import React from 'react';
 export default class Login extends React.Component {
     render() {
         return (
-            <div>
+            <div id="form">
               <h1>Login</h1>
               <form>
                 <div>

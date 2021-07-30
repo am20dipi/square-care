@@ -13,7 +13,7 @@ const link = {
 export default class Navbar extends React.Component {
     render() {
         return (
-            <div>
+            <div class="navbar">
             <NavLink
                 to="/"
                 exact
